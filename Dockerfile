@@ -8,6 +8,6 @@ RUN mvn clean
 RUN mvn package -DskipTests -X
 
 FROM openjdk
-COPY --from=build /app/target/*.jar spring-boot-docker.jar
+COPY --from=build /app/target/*.jar springbootdockerdemo.jar
 EXPOSE 8080
-CMD ["java", "-jar", "spring-boot-docker.jar"]
+CMD ["java", "-jar", "springbootdockerdemo.jar"]
