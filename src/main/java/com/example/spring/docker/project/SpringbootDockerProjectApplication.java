@@ -13,7 +13,7 @@ public class SpringbootDockerProjectApplication {
 	@GetMapping("/message")
 	public String getMessage()
 	{
-		return "Hello..I am From AWS CI/CD Pipeline";
+		return "Hello..I am From AWS CI/CD Pipeline Release 2";
 	}
 
 	public static void main(String[] args) {
